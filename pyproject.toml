@@ -1,0 +1,51 @@
+[project]
+name = "timesfm-tabfm-app"
+version = "0.1.0"
+description = "Unified Streamlit app for TabFM tabular predictions and TimesFM forecasting."
+readme = "README.md"
+#
+# Note: Some core deps (e.g., pyarrow via Streamlit) may not publish wheels for
+# bleeding-edge Python versions. Keep this bounded to a well-supported range.
+#
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "streamlit>=1.32.0,<2.0.0",
+  "pandas>=2.0.0,<3.0.0",
+  "numpy>=1.24.0,<3.0.0",
+  "requests>=2.31.0,<3.0.0",
+  "reportlab>=4.2.0,<5.0.0",
+  "matplotlib>=3.9.0,<4.0.0",
+  "plotly>=5.24.0,<6.0.0",
+  "pydantic>=2.8.0,<3.0.0",
+  "pydantic-settings>=2.3.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+models = [
+  "timesfm[torch]>=2.0.2",
+  "tabfm[pytorch] @ git+https://github.com/google-research/tabfm.git",
+]
+models-jax = [
+  "timesfm[flax]>=2.0.2",
+]
+models-xreg = [
+  "timesfm[xreg]>=2.0.2",
+]
+finetune = [
+  "transformers>=4.57.0,<5.0.0",
+  "accelerate>=1.0.0,<2.0.0",
+  "peft>=0.17.0,<1.0.0",
+  "pyarrow>=20.0.0,<21.0.0",
+  "scikit-learn>=1.7.0,<2.0.0",
+]
+dev = [
+  "pytest>=9.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

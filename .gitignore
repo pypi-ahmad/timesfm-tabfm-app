@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.env
+.venv
+.venv-py314/
+env/
+venv/
+tabfm/
+*.gguf
+*.bin
+*.pt
+*.safetensors
+*.onnx
+
+# Runtime data + artifacts (keep samples committed, keep raw downloads local)
+data/raw/
+artifacts/
+
+# Local TimesFM/LoRA registries + outputs
+.timesfm/
+
+# Streamlit state/config
+.streamlit/
+
+# Local caches (uv, huggingface, etc.)
+.uv-cache/
+.cache/

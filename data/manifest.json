@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "name": "iris",
+      "url": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv",
+      "kind": "tabular",
+      "notes": "Seaborn iris dataset (species classification)."
+    },
+    {
+      "name": "adult_income",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+      "kind": "tabular",
+      "notes": "UCI Adult income (binary classification). No header row."
+    },
+    {
+      "name": "wine_quality_red",
+      "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv",
+      "kind": "tabular",
+      "notes": "UCI Wine Quality (regression target=quality). CSV is semicolon-delimited."
+    },
+    {
+      "name": "air_passengers",
+      "url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/airline-passengers.csv",
+      "kind": "timeseries",
+      "notes": "AirPassengers monthly totals (Month,Passengers)."
+    },
+    {
+      "name": "daily_min_temperatures",
+      "url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv",
+      "kind": "timeseries",
+      "notes": "Daily minimum temperatures (Date,Temp)."
+    },
+    {
+      "name": "monthly_sunspots",
+      "url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/monthly-sunspots.csv",
+      "kind": "timeseries",
+      "notes": "Monthly sunspots (Month,Sunspots)."
+    }
+  ]
+}
