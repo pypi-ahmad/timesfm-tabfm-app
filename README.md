@@ -197,3 +197,5 @@ Some environments also apply small `/tmp` quotas. The setup script defaults cach
 - `XDG_CACHE_HOME=./.cache`
 - `HF_HOME=./.cache/hf`
 - `HUGGINGFACE_HUB_CACHE=./.cache/hf/hub`
+
+<p align="center">Made with ❤️ by Ahmad Mujtaba</p>
